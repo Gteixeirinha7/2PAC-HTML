@@ -50,7 +50,23 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <p>Vamos numerar aqui algumas das melhores praticas de versionamento do seu projeto.</p>
                         <li>Realizar merge em branchs separadas</li>
                         <li>Sistema de Pull Request</li>
-                        <li>Hierarquia de Implantação</li>
+                        <p>
+                        <br>
+                        <p><h2>Realizar merge em branchs separadas</h2>
+                        <li>Para garantir uma entrag unitaria de desenvolvimento, uma boa pratica do desenvolvimento Git é utilizar uma branch especial para merge de projetos.</li>
+                        <li>Vamos utilizar do exemplo, em uma branch esta contido o conteudo estavel do projeto, e um desenvolveu entregou uma nova funcionalidade dentro dessa branch</li>
+                        <li>Voce como outro desenvolvedor esta fazendo um ajuste simples que deve subir para o ambiente de produção, master, neste momento realizar um merge no ambiente mais estavel pode ocasionar em um conflito 
+                            nao desejado, pois voce apenas precisa subir o conteudo simples que esta alterando.
+                        </li>
+                        <li>Geralmente uma boa pratica é colocar a Branch mais estavel dentro da sua, mas se voce fizer isso, o seu codigo tera o conteúdo do outro densevolvedor, será que realmente precisamos puxar esse conteudo para nossa branch?</li>
+                        <h2>Não!!</h2>
+                        <li>Vamos criar uma branch chamada merge{ambiente}, la colocaremos nosso codigo, e o codigo de qa e essa branch será responsavel por realizar o merge para dentro do ambiente de qa, com isso vamos garantir que na nossa branch temos apenas as coisas que nos alteramos</i>
+                        <br>
+                        <p><h2>Sistema de Pull Request</h2>
+                        <li>Liberar um ambiente estavel para que qualquer desenvolvedor ou estagiario posso colocar seu codigo sem analise não é nunca recomendado</li>
+                        <li>Mesmo que voce confie nesse desenvolvedor, não podemos garantir que ele não realize erros de desenvolvimento, com isso vamos implementar as PRs (Pull Requests)</li>
+                        <li>Toda e qualquer mudança dentro da branch estavel deve passar por uma aprovação e analise de um desenvolvedor mais experiente, com isso, o desenvolvedor ou arquiteto que esta analisando o codigo, pode encontrar problemas ou arrumar soluções para regras de negocio.</li>
+                        <p>
                     </div>
                 </div>
                 <hr>
