@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title>Modular WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>Melhores Praticas <br>WEB</b></h1>
+            <p>Bem vindo a melhor escolha de <span class="w3-tag">Desenvolvimento</span></p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="images/for.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h3><b>Vamos realmente aprender a fazer um for?</b></h3>
+                        <h5>for, for invertido, forEach, mesclagem de listas <span class="w3-opacity">Março 08, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p><b>Aqui utilizaremos a linguagem C# para exemplificar
+                        </b>
+                        <p>Como funciona a sintaxe do for:
+                        <p style="color: Blue">for ({0}; {1}; {2}) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;faz algo
+                        <br>}
+                        <li>{0} => Valor(es) a ser(em) instanciado(s), se houver mais de um, devem ser separados por vírgulas
+                        <li>{1} => Um comparador que resultará em um boolean, falso irá fazer com que o programa saia do loop, verdadeiro
+                        prosseguirá com o mesmo
+                        <li>{2} => Funciona como uma linha de código em um while, usado como incrementador, por exemplo: i++ fará com que i = 0
+                        some 1 na variável, logo i = 1 na próxima iteração
+                        
+                        <p>"For" e "while" são ambos loops e possuem funcionamentos iguais, mas são escritos de forma diferente:
+                        
+                        <p>String[] lista = {"zero", "um", "dois"};
+                        <br><li>While</li>
+                        <div style="color: Blue">
+                        <br>int i = 0;
+                        <br>while (i < lista.Length) { 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(lista[i]);
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp; i++; 
+                        <br>}
+                        </div>
+                        <br><li>For</li>
+                        <div style="color: Blue">
+                        <br> for (int i=0; i < lista.Length; i++) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(lista[i]); 
+                        <br>} 
+                        </div>
+                        <p>O exemplo acima é a forma mais básica para fazer um for, mas ainda não a mais
+                            simples 
+                        <p>Para simplificar, o foreach pode ser utilizado: 
+                        <p><li>Foreach</li> 
+                        <div style="color: Blue">
+                        <p>foreach(String elemento in lista) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(elemento); 
+                        <br>} 
+                        </div>
+                        <p>O segundo exemplo (foreach) funciona da mesma forma que o primeiro (for) e tem a vantagem de ser
+                            mais simples, porém um pouco mais limitado, pois não é possível saber o número da iteração atual.
+                        <p>Em contrapartida não é possível obter o erro, list index out of bounds, muito conhecido por tentar acessar um elemento fora da lista.
+                        <p>O próximo exemplo mostra um for invertido (do último para o primeiro): 
+                        <p><div style="color: Blue">
+                            for (int i=lista.Length - 1; i>= 0; i--){
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(lista[i]);
+                            <br>}
+                        </div>
+                            <p>Todos os trechos da sintaxe for são opcionais, então cuidado para não esquecer de colocar um incrementador ou
+                            condição de saída ou criará um loop infinito!
+                            <p>O que NÃO deve ser feito:
+                        
+                            <p><div style="color: Blue">
+                            for (;;)
+                            {
+                        
+                            }
+                        </div>
+                        <p style="color:grey">Morelis, Cauê. Desenvolvedor Web Full Stack (HTML5, CSS3, JS)</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><span class="w3-tag w3-black w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bill gates</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">JS</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Salesforce</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Transmissão</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Git</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">REST</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SOAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pipeline</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Versionamento</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Computação</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <button onclick="window.history.back()"class="w3-button w3-black w3-padding-large w3-margin-bottom">Voltar</button>
+    </footer>
+
+
+</body>
+
+</html>

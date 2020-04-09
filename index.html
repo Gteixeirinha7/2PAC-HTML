@@ -37,8 +37,13 @@ and is wrapped around the whole page content, except for the footer in this exam
 
             <!-- Blog entries -->
             <div class="w3-col l8 s12">
+                <div class="w3-card w3-margin-left w3-margin-right">
+                    <div class="w3-container w3-padding">
+                        <h2>Posts mais recentes:</h2>
+                    </div>
+                </div>
                 <!-- Blog entry -->
-                <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-card-4 w3-margin-bottom w3-margin-left w3-margin-right w3-white">
                     <img src="images/git.png" style="width:100%">
                     <div class="w3-container">
                         <h3><b>Git: Como fazer corretamente?</b></h3>
@@ -72,7 +77,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <p>Conhecer uma ferramenta é mais do que apenas saber fazer for e if, aprenda as arte manhas que o JavaScript e suas bibliotecas deixam programar mais... divertido
                             <div class="w3-row">
                                 <div class="w3-col m8 s12">
-                                    <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Leia Mais »</b></button></p>
+                                    <p><button onclick="openPage('js.html')" class="w3-button w3-padding-large w3-white w3-border"><b>Leia Mais »</b></button></p>
                                 </div>
                                 <div class="w3-col m4 w3-hide-small">
                                     <p><span class="w3-padding-large w3-right"><b>Comentarios &nbsp;</b> <span class="w3-badge">2</span></span>
@@ -90,7 +95,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <img src="images/modular.jpeg" style="width:100%">
                     <div class="w3-container w3-white">
                         <h4><b>Modular Solutions</b></h4>
-                        <p>Somos uma empresa de TI globalmente conhecida por projetos de alta credibilidade e de facil reconstrução.<br>Basicamente somos preguiçosos o suficente para nao querer ter retrabalho. </p>
+                        <p>Somos uma empresa de TI globalmente conhecida por projetos de alta credibilidade e de facil manutenção. Basicamente somos preguiçosos o suficente para nao querer ter retrabalho. </p>
                     </div>
                 </div>
                 <hr>
@@ -101,15 +106,15 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <h4>Posts Famosos</h4>
                     </div>
                     <ul class="w3-ul w3-hoverable w3-white">
-                        <li class="w3-padding-16">
+                        <li class="w3-padding-16" onclick="openPage('for.html')">
                             <img src="images/for.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
                             <span class="w3-large">Vamos realmente aprender a fazer um for?</span><br>
                             <span>for, for invertido, forEach, mesclagem de listas</span>
                         </li>
-                        <li class="w3-padding-16">
-                            <img src="images/angular.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Angular... como não amar algo que facilita sua vida</span><br>
-                            <span>Aprenda a manipular o DOM, sem manipular o DOM</span>
+                        <li class="w3-padding-16" onclick="openPage('RubyOnRails.html')">
+                            <img src="images/rails.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Ruby on Raills, como usar corretamente?</span><br>
+                            <span>Utilização do Ruby on Rails para se obter o máximo da linguagem!</span>
                         </li>
                         <li class="w3-padding-16">
                             <img src="images/Rest.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
@@ -155,8 +160,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- Footer -->
     <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-        <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Modular Solutions</a></p>
     </footer>
 
 

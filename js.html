@@ -39,35 +39,43 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-col l8 s12">
                 <!-- Blog entry -->
                 <div class="w3-card-4 w3-margin w3-white">
-                    <img src="images/git.png" style="width:100%">
+                    <img src="images/JS.jfif" style="width:100%">
                     <div class="w3-container">
-                        <h3><b>Como fazer corretamente?</b></h3>
-                        <h5>Implantação de Git em projetos, <span class="w3-opacity">Março 09, 2020</span></h5>
+                        <h3><b>Javascript e suas "Arte manhas"</b></h3>
+                        <h5>Aprimore seus conhecimentos e impressione outros desenvolvedores, <span class="w3-opacity">Março 10, 2020</span></h5>
                     </div>
 
                     <div class="w3-container">
-                        <p>Implantar git dentro de um projeto não é uma coisa facil, se implantado errado, consertar é ainda pior.</p>
-                        <p>Vamos numerar aqui algumas das melhores praticas de versionamento do seu projeto.</p>
-                        <li>Realizar merge em branchs separadas</li>
-                        <li>Sistema de Pull Request</li>
-                        <p>
-                        <br>
-                        <p><h2>Realizar merge em branchs separadas</h2>
-                        <li>Para garantir uma entrag unitaria de desenvolvimento, uma boa pratica do desenvolvimento Git é utilizar uma branch especial para merge de projetos.</li>
-                        <li>Vamos utilizar do exemplo, em uma branch esta contido o conteudo estavel do projeto, e um desenvolveu entregou uma nova funcionalidade dentro dessa branch</li>
-                        <li>Voce como outro desenvolvedor esta fazendo um ajuste simples que deve subir para o ambiente de produção, master, neste momento realizar um merge no ambiente mais estavel pode ocasionar em um conflito 
-                            nao desejado, pois voce apenas precisa subir o conteudo simples que esta alterando.
-                        </li>
-                        <li>Geralmente uma boa pratica é colocar a Branch mais estavel dentro da sua, mas se voce fizer isso, o seu codigo tera o conteúdo do outro densevolvedor, será que realmente precisamos puxar esse conteudo para nossa branch?</li>
-                        <h2>Não!!</h2>
-                        <li>Vamos criar uma branch chamada merge{ambiente}, la colocaremos nosso codigo, e o codigo de qa e essa branch será responsavel por realizar o merge para dentro do ambiente de qa, com isso vamos garantir que na nossa branch temos apenas as coisas que nos alteramos</i>
-                        <br>
-                        <p><h2>Sistema de Pull Request</h2>
-                        <li>Liberar um ambiente estavel para que qualquer desenvolvedor ou estagiario posso colocar seu codigo sem analise não é nunca recomendado</li>
-                        <li>Mesmo que voce confie nesse desenvolvedor, não podemos garantir que ele não realize erros de desenvolvimento, com isso vamos implementar as PRs (Pull Requests)</li>
-                        <li>Toda e qualquer mudança dentro da branch estavel deve passar por uma aprovação e analise de um desenvolvedor mais experiente, com isso, o desenvolvedor ou arquiteto que esta analisando o codigo, pode encontrar problemas ou arrumar soluções para regras de negocio.</li>
-                        <p>
-                        <p style="color:grey">Teixeira, Gabriel. Desenvolvedor Full Stack (Backend, Frontend)</p>
+                        <p>JavaScript é uma das linguagens mais famosas da WEB, e muito conhecida no mundo da tecnologia, mas porque?
+                        <p>Vamos citar 2 "manhas" que so o Javascript permite voce a fazer
+                            <br>
+                        <li>Chamada de metodo em operador ternario.
+
+                        <p>Praticamente 100% dos programadores utilizando ou sabem oq é um if ternario, aquela instrução de decisão que pode ser executada em uma linha:
+                        <p style="color: blue">(VOCÊ CONHECE JAVASCRIPT ? SIM : NÃO)</p>
+                        <p>Agora imagine fazer isso e chamar um metodo, podemos fazer desta forma:
+                        <p style="color: blue">
+                            <br>funtion x(){
+                            <br>    console.log('Olá Mundo X');
+                            <br>}
+<br>
+                            <br>funtion y(){
+                            <br>    console.log('Olá Mundo Y');
+                            <br>}
+<br>
+                            <p style="color: green">//Chamando a função</p>
+                            <p style="color: blue">(true ? x : y)();</p>
+                        </p>
+                        <p> Com isso, podemos chamar qualquer tipo e nome de metodo desta forma, so cuidado para não escrever errado o nome ein....
+                        <li>Template Literals
+                            <p>Como voce faz hoje para colocar uma variavel dentro de um texto? desta forma:</p>
+                            <p style="color: blue">'Eu e o '+nomeMelhorAmigo+' vamos a uma festa amanhã.'</p>
+                            <p>Mas e se quisessemos colocar varias variaveis dentro de um texto...</p>
+                            <p style="color: blue">'Eu, '+nomeMelhorAmigo+', '+nomeMelhorAmigo1+', '+nomeMelhorAmigo2+', '+nomeMelhorAmigo3+', '+nomeMelhorAmigo4+' vamos a uma festa amanhã.'</p>
+                            <p>Com certeza você vai esquecer de abrir uma aspas ou colocar um sinal de +, isso seria um problema de execução da aplicação, então podemos usar Template Literals para nos ajudar, desta forma:</p>
+                            <p style="color: blue">`Eu, ${nomeMelhorAmigo}, ${nomeMelhorAmigo1}, ${nomeMelhorAmigo2}, ${nomeMelhorAmigo3}, ${nomeMelhorAmigo4} vamos a uma festa amanhã.`</p>
+                            <p style="color:grey">Teixeira, Gabriel. Desenvolvedor Full Stack (Backend, Frontend)</p>
+                            
                     </div>
                 </div>
                 <hr>
@@ -109,7 +117,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- Footer -->
     <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-        <button onclick="window.history.back()" class="w3-button w3-black w3-padding-large w3-margin-bottom">Voltar</button>
+        <button onclick="window.history.back()"class="w3-button w3-black w3-padding-large w3-margin-bottom">Voltar</button>
     </footer>
 
 
