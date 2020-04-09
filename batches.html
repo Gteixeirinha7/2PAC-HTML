@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>Modular WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>Melhores Práticas <br>WEB</b></h1>
+            <p>Bem vindo à melhor escolha de <span class="w3-tag">Desenvolvimento</span></p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="images/boxes.jpeg" style="width:100%">
+                    <div class="w3-container">
+                        <h3><b>Processos em lotes ou "Batches"</b></h3>
+                        <h5>Uso de processos em lotes para grandes volumes de dados <span class="w3-opacity">Abril 08, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p><b>Aqui utilizaremos a linguagem Apex para exemplificar
+                        </b>
+                        <p>Como funciona a sintaxe de uma batch:
+
+                        <p style="color: Blue">global class BatchTest implements Database.Batchable&lt;SObject&gt; {
+
+                        <p style="color: Blue">&nbsp;{0} global Database.QueryLocator start(Database.BatchableContext bc) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faz uma seleção de dados no banco (grande volume).
+                        <br>&nbsp;}
+
+                        <p style="color: Blue">&nbsp;{1} global void execute(Database.BatchableContext bc, list &lt;P&gt;) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faz algum processo com os dados do lote recebido.
+                        <br>&nbsp;}
+
+                        <p style="color: Blue">&nbsp;{2} global void finish(Database.BatchableContext bc) {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faz algum processo após TODOS os lotes serem executados.
+                        <br>&nbsp;}
+                        <br>}
+
+                        <li>{0} => Executado apenas uma vez, pode selecionar até 50 milhões de registros.
+                        <li>{1} => Pode ser executado diversas vezes dependendo da volumetria de dados que foram selecionados.
+                        <li>{2} => Executado apenas uma vez, após todos os lotes do passo {1} serem executados.
+                        
+                        <p>Para executar este processo em lotes, o seguinte código deve ser executado:
+                        
+                        <p style="color: Blue">Database.executeBatch(new BatchTest(), 5000);
+
+                        <br><li>"new BatchTest()"</li>
+                        <p>É uma instância da classe que contém o processo em lote, é necessário para que o programa entenda a classe que será usada no processo.
+
+                        <br><li>"5000"</li>
+                        <br>Quantidade de registros por lote, por exemplo:
+                        <p>Se vier um total de 15001 registros, o trecho {1} executará quatro vezes, as três primeiras processando os 15000 primeiros dados e a quarta execução será com apenas o registro que sobrou.
+
+                        <p style="color:grey">Morelis, Caue. Desenvolvedor Web Full Stack (HTML5, CSS3, JS)</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><span class="w3-tag w3-black w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bill gates</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">JS</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Salesforce</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Transmissão</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Git</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">REST</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SOAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pipeline</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Versionamento</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Computação</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <button onclick="window.history.back()"class="w3-button w3-black w3-padding-large w3-margin-bottom">Voltar</button>
+    </footer>
+
+
+</body>
+
+</html>
