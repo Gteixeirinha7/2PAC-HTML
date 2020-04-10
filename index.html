@@ -30,13 +30,20 @@ and is wrapped around the whole page content, except for the footer in this exam
         <header class="w3-container w3-center w3-padding-32">
             <h1><b>Melhores Práticas <br>WEB</b></h1>
             <p>Bem vindo à melhor escolha de <span class="w3-tag">Desenvolvimento</span></p>
+            <p>Se quiser escutar uma boa musica enquanto estuda, utilize nosso player do deezer ;)</p>
         </header>
 
         <!-- Grid -->
         <div class="w3-row">
 
             <!-- Blog entries -->
-            <div class="w3-col l8 s12">
+            <div class="w3-col l8 s12">   
+                <div class="w3-card w3-margin-left w3-margin-right">
+                    <iframe scrolling="no" frameborder="0" allowTransparency="true"
+                    src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=700&height=350&color=040404&layout=dark&size=medium&type=playlist&id=5428316562&app_id=1"
+                    width="750" height="90" class="iframeDeezer" id="deezerElement"></iframe>
+                    </div>
+                      
                 <div class="w3-card w3-margin-left w3-margin-right">
                     <div class="w3-container w3-padding">
                         <h2>Posts mais recentes:</h2>
@@ -120,6 +127,11 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <img src="images/boxes.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
                             <span class="w3-large">Processos em lotes ou "Batches"</span><br>
                             <span>Uso de processos em lotes para grandes volumes de dados</span>
+                        </li>
+                        <li class="w3-padding-16"" onclick="openPage('homefifa.html')">
+                            <img src="images/homeOffice.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Home Office? Vamos falar sobre isso.</span><br>
+                            <span>Com o novo assunto do corona virus, como os funcionarios de TI estao trabalhando hoje em dia?</span>
                         </li>
                         <li class="w3-padding-16">
                             <img src="images/Rest.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
