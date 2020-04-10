@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Modular WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>Melhores Práticas <br>WEB</b></h1>
+            <p>Bem vindo à melhor escolha de <span class="w3-tag">Desenvolvimento</span></p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="images/soql.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h3><b>Selecionando dados no banco orientado a objetos</b></h3>
+                        <h5>Como funciona a sintaxe para selecionar, filtrar e ordenar registros em uma "Query" <span class="w3-opacity">Abril 08, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p><b>Aqui utilizaremos a linguagem Apex para exemplificar
+                        </b>
+                        <p>Como funciona a sintaxe de uma Query no banco de dados do <a href="https://www.salesforce.com/br/" target="_blank" style="color: Blue">Salesforce</a>:
+
+                        <p style="color: Blue">SELECT {0} FROM {1} WHERE {2} ORDER BY {3}
+
+                        <li>{0} => Campos a serem selecionados, pode ser o código do registro, uma data de criação ou uma chave que dirá se o registro foi apagado.
+                        <li>{1} => A tabela, ou objeto no caso, que terá os registros selecionados.
+                        <li>{2} => Trecho de filtragem, podem ter diversos filtros, como por exemplo:
+                        <p>DataCriacao &lt; Data.hoje (selecionará todos os registros que não foram criados hoje).
+                        <li>{3} => Qual campo utilizar para ordenação dos registros, o padrão é do menor para o maior
+                        
+                        <p style="color: Blue">Exemplo: [SELECT Id, DataCriacao FROM Produto WHERE DataCriacao &lt; Data.hoje ORDER BY DataCriacao]
+
+                        <p>Considerando que 'hoje' fosse '2020/04/11' O retorno virá:
+                        <p>[{Id='oo00fh1tf6ddrg186rht', DataCriacao=2020/04/02},
+                        <p>{Id='oo00f645f6ddrgge6rht', DataCriacao=2020/04/05},
+                        <p>{Id='o37161tf6ddrg186rht', DataCriacao=2020/04/10}]
+
+                        <p style="color:grey">Morelis, Caue. Desenvolvedor Web Full Stack (HTML5, CSS3, JS)</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><span class="w3-tag w3-black w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bill gates</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">JS</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Salesforce</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Transmissão</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Git</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">REST</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SOAP</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pipeline</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Versionamento</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Computação</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <button onclick="window.history.back()"class="w3-button w3-black w3-padding-large w3-margin-bottom">Voltar</button>
+    </footer>
+
+
+</body>
+
+</html>
