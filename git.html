@@ -3,11 +3,16 @@
 <head>
     <title>Modular WEB</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
     <style>
         body,
         h1,
@@ -99,6 +104,45 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java</span>
                             <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
                         </p>
+                    </div>
+                </div>
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Comentarios</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <div class="row bootstrap snippets">
+                            <div class="col-sm-12" style="padding-top: 15px;">
+                                <div class="comment-wrapper">
+                                    <div class="panel panel-info">
+                                        <div class="panel-body" style="max-height: 1848px;">
+                                            <p style="margin-bottom: 0px;">Nome do Usuario: </p>
+                                            <input id="userNameInput" class="form-control" type="text"></input>
+                                            <p style="margin-bottom: 0px;">Comentario: </p>
+                                            <textarea id="textAreaInput" class="form-control" placeholder="Digite um Comentario"
+                                                rows="3"></textarea>
+                                            <br>
+                                            <button class="btn btn-primary" onclick="sendCommentData('commentsAreaId')" type="button"
+                                                clas s="btn btn-info pull-right">Postar</button>
+                                            <div class="clearfix"></div>
+                                            <hr>
+                                            <ul id="commentsAreaId" class="media-list" style="padding: 0px">
+                                                <li class="media">
+                                                    <div class="media-body">
+                                                        <strong class="text-success">Carlos Augusto Reis</strong>
+                                                        <span class="text-muted pull-right">
+                                                            <small class="text-muted">17/05/2020 11:17:07</small>
+                                                        </span>
+                                                        <p>Poderiam postar um explicando como montar um sistema de merge do inicio?</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
                     </div>
                 </div>
 
