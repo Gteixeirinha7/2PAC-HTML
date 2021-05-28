@@ -7,7 +7,7 @@ openPage = function(page) {
     $('#commentsAreaId').html(loadCommentsPage(page));
 }
 /*
-ALLAN VIADO
+ALLAN VIADO!!!
 $(window).scroll(function (e) {
     var $el = $('.deezerElement');
     var isPositionFixed = ($el.css('position') == 'fixed');
